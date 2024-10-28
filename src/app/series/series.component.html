@@ -1,0 +1,22 @@
+<div class="col-6" align="center">
+  <br>
+  <table class="table table-primary table-striped">
+      <thead class="table-dark">
+          <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>Channel</th>
+              <th>Seasons</th>
+          </tr>
+      </thead>
+      <tbody id="tabla_series" class="table-group-divider" *ngFor="let serie of seriesBase">
+          <tr>
+              <td>{{serie.iD}}</td>
+              <td>{{serie.nombre}}</td>
+              <td>{{serie.canal}}</td>
+              <td>{{serie.temporadas}}</td>
+          </tr>
+      </tbody>
+  </table>
+  <h6 align="left">Season Average: <b>{{promedio}}</b></h6>
+</div>
